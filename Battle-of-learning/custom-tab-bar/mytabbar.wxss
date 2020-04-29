@@ -1,0 +1,3 @@
+.vant-tabbar {
+  background-color: chocolate !important;
+}

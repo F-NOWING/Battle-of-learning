@@ -1,0 +1,44 @@
+{
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "123/index"
+      },
+      {
+        "pagePath": "123/index1"
+      }
+    ]
+  },
+  "pages": [
+    
+    "123/index",
+    "123/index1",
+    "pages/readingRoom/articleList/articleList",
+    "pages/studentCard/personCollect/collectArticle/collectArticle",
+    "pages/studentCard/personCollect/collectVideo/collectVideo",
+    "pages/studentCard/numberBind/bindPhone",
+    "pages/studentCard/infoEdit/infoChange",
+    "pages/studentCard/cardHome/cardDetail",
+    "pages/index/index",
+    "pages/homePage/index",
+    "pages/logs/logs"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1b1a1f",
+    "navigationBarTitleText": "求学大作战",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

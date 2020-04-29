@@ -1,0 +1,74 @@
+/* pages/studentCard/cardHome/cardDetail.wxss */
+page {
+  background-color: #fbf3d0;
+  /* padding: 10px 10px; */
+}
+.personal-card {
+  text-align: center;
+}
+.student-card {
+  /* margin: 5px 16px; */
+  width: 90%;
+}
+.personal-info {
+  /* z-index: ; */
+  position: absolute;
+  display: flex;
+  /* justify-content: space-between; */
+  top: 88px;
+  left: 60px;
+}
+.personal-name,
+.personal-grade,
+.personal-peas {
+  margin-bottom: 4px;
+}
+
+.personal-avatar {
+  width: 70px;
+  height: 86px;
+  border: 2px solid #fcba1a;
+}
+.personal-card-info {
+  margin-left: 20px;
+  text-align: left;
+}
+.name, 
+.grade,
+.peas {
+  color: #fcba1a;
+}
+.data-name,
+.data-grade,
+.data-peas-total {
+  color: #5f2500;
+}
+/* 信息编辑 */
+.personal-edit {
+  position: absolute;
+  top: 182px;
+  left: 60px;
+  font-size: 14px;
+  color: #74a9f5;
+}
+/* 收藏与绑定 */
+button {
+  margin: 10px 16px;
+  padding-left: 70px;
+  text-align: left;
+  background-color: #fcd32d;
+  color: #5f2500;
+  border-top: 1px solid #d3aa34;
+}
+.personal,
+.account {
+  position: relative;
+}
+.personal-collect,
+.account-bind {
+  z-index: 1;
+  position: absolute;
+  top: -96px;
+  left: 32px;
+  width: 40px;
+}

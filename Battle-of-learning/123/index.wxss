@@ -1,0 +1,5 @@
+/* 123/index.wxss */
+.abc {
+  position: absolute;
+  margin-top: 60px;
+}

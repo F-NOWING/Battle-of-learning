@@ -1,0 +1,63 @@
+/* pages/studentCard/infoEdit/infoChange.wxss */
+page {
+  background-color: #fbf3d0;
+}
+.personal-card {
+  text-align: center;
+}
+.student-card {
+  width: 90%;
+}
+.personal-info {
+  position: absolute;
+  display: flex;
+  top: 88px;
+  left: 60px;
+}
+.personal-name,
+.personal-grade,
+.personal-peas {
+  margin-bottom: 4px;
+}
+
+.personal-avatar {
+  width: 70px;
+  height: 86px;
+  border: 2px solid #fcba1a;
+}
+.personal-card-info {
+  margin-left: 20px;
+  text-align: left;
+}
+.name, 
+.grade,
+.peas {
+  color: #fcba1a;
+}
+.data-peas-total {
+  color: #5f2500;
+}
+.edit-name,
+.edit-grade {
+  padding-left: 6px;
+  margin-left: 6px;
+  width: 82px;
+  background-color: #fcd32d;
+  border-radius: 8px;
+}
+.personal-name,
+.personal-grade {
+  display: flex;
+}
+.personal-info-edit {
+  width: 36%;
+  height: 36px;
+  line-height: 32px;
+  background-color: #aec542;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px solid #5f2500;
+}
+
+
+  

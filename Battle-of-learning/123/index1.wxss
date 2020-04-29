@@ -1,0 +1,4 @@
+/* 123/index1.wxss */
+.text {
+  position: absolute;
+}

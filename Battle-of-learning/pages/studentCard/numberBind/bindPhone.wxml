@@ -1,0 +1,18 @@
+<!--pages/studentCard/numberBind/bindPhone.wxml-->
+<view class="phone-bind">
+  <text>手机绑定</text>
+</view>
+<view class="bind-describe">
+  <image class="bind-notice" src="../../../images/bind-notice.png" mode="aspectFit"></image>
+  <text class="bind-text">绑定手机号可获得20颗逆袭豆</text>
+</view>
+<view class="phone">
+  <text class="phone-number">手 机:</text>
+  <input class="phone-input" maxlength="11" placeholder="同学,输一个能接收验证码的手机号"/>
+</view>
+<view class="check">
+  <text class="phone-check">验 证:</text>
+  <input class="phone-checkNum" placeholder="输入手机验证码"/>
+  <button class="get-checkNum" bindtap="bindNumber">获取验证码</button>
+</view>
+<button class="to-bind">绑定</button>

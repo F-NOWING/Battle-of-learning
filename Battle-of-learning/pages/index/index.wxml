@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" wx:if="{{!hasUserInfo && canIUse}}" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  </view>
+  <view class="choose-grade" hidden="{{isLogin}}"> 
+    <view class="grade-area">
+      <view class="grade-title">请选择你的年级</view>
+      <view>
+        <van-radio-group value="{{ radio }}" bind:change="onChange">
+          <view class="grade">初中</view>
+          <van-radio class="label-class" name="1" shape="square">初一</van-radio>
+          <van-radio class="label-class" name="2" shape="square">初二</van-radio>
+          <van-radio class="label-class" name="3" shape="square">初三</van-radio>
+          <view class="grade">高中</view>
+          <van-radio class="label-class" name="4" shape="square">高一</van-radio>
+          <van-radio class="label-class" name="5" shape="square">高二</van-radio>
+          <van-radio class="label-class" name="6" shape="square">高三</van-radio>
+        </van-radio-group>
+      </view>
+      <button class="grade-in" bindtap="toHomePage" disabled="{{isChoose}}">进入求学大作战</button>
+    </view>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <!-- <view bindtap="login">dddddddd</view> -->
+</view>

@@ -1,0 +1,26 @@
+<!--pages/studentCard/infoEdit/infoChange.wxml-->
+<view class="personal-card">
+    <image class="student-card" src="../../../images/card.png" mode="aspectFit"></image>
+    <view class="personal-info">
+      <view class="personal-avatar">
+        <image class="avatar-url"></image>
+      </view>
+      <view class="personal-card-info">
+        <view class="personal-name">
+          <text class="name">姓名: </text>
+          <input class="edit-name" maxlength="8"/>
+        </view>
+        <view class="personal-grade">
+          <text class="grade">年级: </text>
+          <input class="edit-grade"/>
+        </view>
+        <view class="personal-peas">
+          <text class="peas">逆袭豆: </text>
+          <text class="data-peas-total">111</text>
+        </view>
+        <!-- <view class="personal-"></view> -->
+      </view>
+    </view>
+     <!-- <text class="personal-edit">编辑</text>  -->
+  </view>
+  <button class="personal-info-edit">保存修改</button>

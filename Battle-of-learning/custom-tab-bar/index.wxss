@@ -1,0 +1,27 @@
+.text {
+  display: inline-block;
+  width: 100px;
+  font-size: 20px;
+  color: brown;
+  /* background-color: blue; */
+}
+/* .reset {
+  background-color: crimson;
+} */
+/* .van-tabbar {
+  background-color: #ffe57e !important;
+} */
+.tabbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* background-color: black !important; */
+}
+.line {
+  /* z-index: 1; */
+  position: fixed;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: #7b4716;
+}

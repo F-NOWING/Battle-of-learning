@@ -1,0 +1,34 @@
+<!--pages/homePage/index.wxml-->
+<view class="home">
+<!-- <cover-image class="home-bg" src="../../images/home.png"></cover-image> -->
+<image class="home-sign" bindtap="toSign" src="../../images/sign-in.png" mode="aspectFit"></image>
+<image class="home-card" src="../../images/studentCard.png" mode="aspectFit"></image>
+<image class="home-teaching" src="../../images/teaching.png" mode="aspectFit"></image>
+<image class="home-reading" src="../../images/reading.png" mode="aspectFit"></image>
+<view class="home-record" hidden="{{isSigned}}">
+  <image class="home-record-log" src="../../images/sign-log.png" mode="aspectFit"></image>
+  <text class="home-record-all">当前累计签到天数 1 天</text>
+  <!-- <image class="home-record-today" src="../../images/sign-in.png" mode="aspectFit"></image> -->
+  <view class="home-record-date">
+    <view class="date" wx:for="{{nullDaySize}}" wx:key="index"></view>
+    <view class="date" wx:for="{{monthDaySize}}" wx:key="index">
+      <text wx:if="{{item==1}}" class="hasSigned">{{index+1}}</text>
+      <text wx:else>{{index+1}}</text>
+    </view>
+  </view>
+  <button class="home-record-today" bindtap="recordSignIn">签到</button>
+</view>
+<view class="home-getPeas" hidden="{{isSuccess}}">
+  <image class="home-getPeas-success" src="../../images/sign-success.png" mode="aspectFit"></image>
+  <image class="home-getPeas-close" bindtap="closeToast" src="../../images/fork.png" mode="aspectFit"></image>
+  <view class="home-getPeas-confirm">+{{5}}</view>
+</view>
+<view class="home-rule">
+  <text class="home-rule-use" bindtap="viewRule">使用规则</text>
+  <icon type="info" size="20" color="#fff"/>
+</view>
+<view class="home-notice" hidden="{{hasConfirm}}" >
+  <image class="home-notice-img" src="../../images/rule.png" mode="aspectFit"></image>
+  <image class="home-notice-confirm" bindtap="confirmRule" src="../../images/know.png" mode="aspectFit"></image>
+</view>
+</view>
